@@ -1,7 +1,7 @@
-# EX 5 C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+# EX 5 C Write a C program to find compound interest. Note: Inputs are principle, year and rate.
 ## DATE:
 ## AIM:
-To write a C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+Write a C program to find compound interest. 
 
 ## Algorithm
 1. Start. 
@@ -15,22 +15,21 @@ To write a C program to calculate the total marks, average, and percentage of ma
 ## Program:
 ```
  
-#include <stdio.h> 
-int main() { 
-    int sub1, sub2, sub3, total; 
-    float average; 
-    scanf("%d %d %d", &sub1,&sub2,&sub3); 
-    total = sub1 + sub2 + sub3; 
-    average = total / 3.0; 
-    printf("\nTotal : %d\n", total); 
-    printf("Average : %.2f\n", average); 
-    return 0; 
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+   float p,y,r,c;
+   scanf("%f%f%f",&p,&y,&r);
+   c=p*(pow((1+r/100),y));
+   printf("Amount with Compound Interest = %.2f",c);
+   return 0;
 }
 ```
 
 ## Output:
 
-<img width="517" height="219" alt="image" src="https://github.com/user-attachments/assets/70e10b25-b056-4270-8c4d-5184af4af4c0" />
+<img width="1627" height="403" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/7fbca597-daa7-419e-b83b-29ac3875eca0" />
 
 
 ## Result:
